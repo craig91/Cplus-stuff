@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string>
+
 
 using namespace std;
 
@@ -11,6 +11,8 @@ struct Vector3 {
 
 int main() {
 
+    // cout << "Hello World!" << endl;
+    // return 0;
     int value = 5; // Stack allocation
     int array[5];
     array[0] = 1;
@@ -33,5 +35,5 @@ int main() {
 
 
 
-    cin.get();
+    std::cin.get();
 }
