@@ -1,0 +1,8 @@
+/home/cdejean/Code/Cplus-stuff/qt-projects/build-untitled-Desktop-Debug/CMakeFiles/untitled.dir
+/home/cdejean/Code/Cplus-stuff/qt-projects/build-untitled-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/cdejean/Code/Cplus-stuff/qt-projects/build-untitled-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/cdejean/Code/Cplus-stuff/qt-projects/build-untitled-Desktop-Debug/CMakeFiles/list_install_components.dir
+/home/cdejean/Code/Cplus-stuff/qt-projects/build-untitled-Desktop-Debug/CMakeFiles/install.dir
+/home/cdejean/Code/Cplus-stuff/qt-projects/build-untitled-Desktop-Debug/CMakeFiles/install/local.dir
+/home/cdejean/Code/Cplus-stuff/qt-projects/build-untitled-Desktop-Debug/CMakeFiles/install/strip.dir
+/home/cdejean/Code/Cplus-stuff/qt-projects/build-untitled-Desktop-Debug/CMakeFiles/untitled_autogen.dir
