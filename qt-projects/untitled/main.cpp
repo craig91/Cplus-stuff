@@ -1,4 +1,3 @@
-#include <QCoreApplication>
 #include <iostream>
 
 using namespace std;
