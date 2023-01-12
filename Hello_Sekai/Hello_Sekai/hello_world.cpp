@@ -64,21 +64,34 @@ int main() {
 	// && (logical and) returns true of both statements are true
 	// || (logical or) returns true if one of the statements are true
 	// ! (logical not) reverse the result, returns false of the result is true
-	int x = 5;
-	int y = 3;
+	// int x = 5;
+	// int y = 3;
 
-	cout << (x < 5 && x < 10) << endl;
-	cout << (x < 5 || x < 10) << endl;
-	cout << !(x < 5 && x < 10) << endl;
+	// cout << (x < 5 && x < 10) << endl;
+	// cout << (x < 5 || x < 10) << endl;
+	// cout << !(x < 5 && x < 10) << endl;
 
 	// Strings
-	string firstName = "John ";
-	string lastName = "Doe ";
-	//string fullName = firstName + lastName;
-	//cout << fullName;
+	// string firstName = "John ";
+	// string lastName = "Doe ";
+	// string fullName = firstName + lastName;
+	// cout << fullName;
 
 	// A string in C++ is actually an object, this means that it contains functions that you can use on a string.
-	string fullName = firstName.append(lastName);
-	cout << fullName;
+	// string fullName = firstName.append(lastName);
+	// cout << fullName;
+
+	string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	cout << "The length of the txt string is: " << txt.length() << endl;
+	cout << "The length of the txt string using the size() function is: " << txt.size() << endl;
+
+	string myString = "Hello";
+	cout << myString[0] << endl;
+	cout << myString[1] << endl;
+	myString[0] = 'J'; // you can change individual characters on a string using bracket notation.
+	cout << myString << endl;
+
+
+
 
 }
