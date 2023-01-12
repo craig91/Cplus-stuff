@@ -23,14 +23,14 @@ int main() {
 	const int minutesPerHour = 60;
 	const float PI = 3.14;
 
-	int x, y;
+	/* int x, y;
 	int sum;
 	cout << "Type a number: ";
 	cin >> x;
 	cout << "Type another number: ";
 	cin >> y;
 	sum = x + y;
-	cout << "Sum is: " << sum;
+	cout << "Sum is: " << sum;  */
 
 	cout << "size of char: " << sizeof(char) << endl;
 	cout << "size of int: " << sizeof(int) << endl;
@@ -38,6 +38,47 @@ int main() {
 	cout << "size of float: " << sizeof(float) << endl;
 	cout << "size of double: " << sizeof(double) << endl;
 
+	// Scientific Numbers
+	// "e" means to the power of 10.
+	float f1 = 35e3;
+	double d1 = 12E4;
+	cout << f1 << endl;
+	cout << d1 << endl;
 
+
+	// booleans
+	// return values for booleans are 0 (false) and 1 (true)
+/*	bool isCodingFun = true;
+	bool isFishTasty = false;
+
+	cout << isCodingFun << endl;
+	cout << isFishTasty << endl;
+
+	char a = 65, b = 66, c = 67;
+	cout << a << endl;
+	cout << b << endl;
+	cout << c << endl; */
+
+	// Logical Operators
+	// You can test for true(1) or false(0) values with logical operators
+	// && (logical and) returns true of both statements are true
+	// || (logical or) returns true if one of the statements are true
+	// ! (logical not) reverse the result, returns false of the result is true
+	int x = 5;
+	int y = 3;
+
+	cout << (x < 5 && x < 10) << endl;
+	cout << (x < 5 || x < 10) << endl;
+	cout << !(x < 5 && x < 10) << endl;
+
+	// Strings
+	string firstName = "John ";
+	string lastName = "Doe ";
+	//string fullName = firstName + lastName;
+	//cout << fullName;
+
+	// A string in C++ is actually an object, this means that it contains functions that you can use on a string.
+	string fullName = firstName.append(lastName);
+	cout << fullName;
 
 }
