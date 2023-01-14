@@ -105,10 +105,10 @@ int main() {
 	// Arrays
 	// Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
 	string cars[5] = { "Volvo", "BMW", "Ford", "Mazda", "Tesla"};
-	for (int i = 0; i < 5; i++) {
+	/* for (int i = 0; i < 5; i++) {
 		// cout << cars[i] << endl;
 		cout << i << " = " << cars[i] << endl;
-	}
+	} */
 
 	int myNum[5] = { 10, 20, 30, 40, 50 };
 	
@@ -116,9 +116,9 @@ int main() {
 		cout << myNum[i] << endl;
 	} */
 	// For each loop version
-	for (int i : myNum) {
+	/*for (int i : myNum) {
 		cout << i << endl;
-	}
+	}*/
 	// cout << cars[0] << endl;
 	// cars[0] = "Opel";
 	// cout << cars[0] << endl;
@@ -127,24 +127,24 @@ int main() {
 	string cars2[] = { "Dodge", "Bugatti", "Toyta" };
 
 	// having the number of elements in an array declared like the cars array above is considered good practice so you can avoid errors in your code.
-	cout << sizeof(cars2) << endl;
+	// cout << sizeof(cars2) << endl;
 	// The array contains 3 elements, but the output is 120, why?
 	// The sizeof() function returns the size of a type in bytes
 
 	int myNumbers[] = { 10,20,30,40,50 };
 	
-	for (int i = 0; i < sizeof(myNumbers) / sizeof(int); i++) {
+	 /* for (int i = 0; i < sizeof(myNumbers) / sizeof(int); i++) {
 		cout << "Elements using for loop: " << myNumbers[i] << endl;
-	};
+	}; */
 
-	for (int i : myNumbers) {
+	/*for (int i : myNumbers) {
 		cout << "Elements using for each loop: " << i << endl;
 	}
-
-	cout << sizeof(myNumbers) << endl;
+	*/
+	// cout << sizeof(myNumbers) << endl;
 	int getArrayLength = sizeof(myNumbers) / sizeof(int); // To find out how many elements an array has, you have to divide the size of the array by the size of the data type it contains. You can also add this method inside of a loop declaration like above.
 
-	cout << "The length of the array is: " << getArrayLength;
+	// cout << "The length of the array is: " << getArrayLength << endl;
 
 	// Multidimensional Arrays
 	// A multidimensional array is an array of arrays.
@@ -154,7 +154,42 @@ int main() {
 	string letters[2][4] = {
 		{"A", "B", "C", "D"},
 		{"E", "F", "G", "H"}
+	};
+
+		// Each set of square brackets in an array declaration adds another dimension to an array. An array like the one above is said to have two dimensions. Arrays can have any number of dimensions. The more dimensions an array has, the more complex the code becomes.
+	string letters2[2][2][2] = {
+	{
+		{"A", "B"},
+		{"C", "D"}
+	},
+	{
+		{"E", "F"},
+		{"G", "H"}
 	}
+}; 
+
+// Access the elements of a multidimensional array
+// To access an element of a multidimensional array, specify an index number in each of the array's dimensions.
+
+	string letters3[2][4] = {
+		{"A", "B", "C", "D"},
+		{"E", "F", "G", "H"}
+	};
+
+	cout << letters3[0][0] << endl;
+	cout << letters3[0][1] << endl;
+	cout << letters3[0][2] << endl;
+	cout << letters3[0][3] << endl;
+	cout << "*****************" << endl;
+	cout << letters3[1][0] << endl;
+	cout << letters3[1][1] << endl;
+	cout << letters3[1][2] << endl;
+	cout << letters3[1][3] << endl;
+
+
+
+
+
 
 	
 
