@@ -284,6 +284,23 @@ int main() {
 	Car2.year = 1994;
 
 
+	// References
+	// A reference variable is a "reference" to an existing variable, and it is created with the & operator.
+
+	string food = "Pizza";
+	string& meal = food;
+
+	cout << food << endl;
+	cout << meal << endl;
+
+	// Memory address
+	// The & operator was used to create a reference variable. It can also be used to get the memory addres of a variable; which is the location of where the variable is stored on the computer. When a var is created in C++, a memory address is assigned to the variable. And when I assign a value to the variable, it is stored in the memory address. To access it, I have to use the & operator, the result will represent where the variable is stored in memory.
+
+	cout << &food << endl;; // Outputs 000000A8C9F9F4E8 on my computer. This memory address will change everytime my program is run.
+	
+	const string desert = "cake";
+	cout << &desert << endl; // Outputs 0000000D9CFDF768 on my computer. This memory address changes as well for some reason. I thought it would stay the same since its a constant. But it seems like only the value is immutable, but not the memory address.
+
 
 
 
