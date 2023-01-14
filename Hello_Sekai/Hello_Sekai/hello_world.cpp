@@ -125,9 +125,28 @@ int main() {
 
 	// in C++, you don't have to specify the size of an array, the compiler is smart enough to determine the size based on the number of values inside
 	string cars2[] = { "Dodge", "Bugatti", "Toyta" };
+
 	// having the number of elements in an array declared like the cars array above is considered good practice so you can avoid errors in your code.
+	cout << sizeof(cars2) << endl;
+	// The array contains 3 elements, but the output is 120, why?
+	// The sizeof() function returns the size of a type in bytes
 
+	int myNumbers[] = { 10,20,30,40,50 };
+	
+	for (int i = 0; i < sizeof(myNumbers) / sizeof(int); i++) {
+		cout << "Elements using for loop: " << myNumbers[i] << endl;
+	};
 
+	for (int i : myNumbers) {
+		cout << "Elements using for each loop: " << i << endl;
+	}
+
+	cout << sizeof(myNumbers) << endl;
+	int getArrayLength = sizeof(myNumbers) / sizeof(int); // To find out how many elements an array has, you have to divide the size of the array by the size of the data type it contains. You can also add this method inside of a loop declaration like above.
+
+	cout << "The length of the array is: " << getArrayLength;
+
+	
 	
 
 
