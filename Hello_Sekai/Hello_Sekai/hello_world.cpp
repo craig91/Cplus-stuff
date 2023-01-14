@@ -204,13 +204,87 @@ int main() {
 		}
 	};
 
-	for (int i = 0; i < 2; i++) {
+/*	for (int i = 0; i < 2; i++) {
 		for (int j = 0; j < 2; j++) {
 			for (int k = 0; k < 2; k++) {
 				cout << threeDimension[i][j][k] << endl;
 			}
 		}
 	};
+*/
+
+// Struct
+	// structs are a way to group several related variables into one place. Each var in the structure is known as a member of the structure.
+	// unlike an array, a struct can contain many different data types
+
+
+	// create structure
+	struct {
+		int number; // Member (int variable)
+		string str; // Member (String variable
+	} myStructure;
+
+
+	// assign values to members of myStructure
+	myStructure.number = 10;
+	myStructure.str = "Hello";
+
+	cout << myStructure.number << endl;
+	cout << myStructure.str << endl;
+
+	// one structure in multiple variables
+
+	struct {
+		int num1 = 12;
+		string test = "This is a struct member";
+	} myStruct1, myStruct2, myStruct3; // Multiple structure variables separated with commas.
+
+	struct {
+		string brand;
+		string model;
+		int year;
+	} myCar1, myCar2;
+
+	// insert data into the first struct
+	myCar1.brand = "BMW";
+	myCar1.model = "X5";
+	myCar1.year = 1999;
+
+	myCar2.brand = "Ford";
+	myCar2.model = "Mustang";
+	myCar2.year = 1969;
+
+	cout << myCar1.brand << " " << myCar1.model << " " << myCar1.year << endl;
+	cout << myCar2.brand << " " << myCar2.model << " " << myCar2.year << endl;
+
+	// Named Structures
+	// By giving a name to the structure, you can treat it as a data type. This means that you can create variables with this structure anywhere in the program at any time.
+	
+	struct myDataType {
+		int digit;
+		string words;
+	};
+
+	myDataType myVar;
+
+	struct car2 {
+		string brand;
+		string model;
+		int year;
+	};
+
+	car2 Car1;
+	Car1.brand = "Mitsubishi";
+	Car1.model = "Eclipse";
+	Car1.year = 1996;
+
+	car2 Car2;
+	Car2.brand = "Toyota";
+	Car2.model = "Supra";
+	Car2.year = 1994;
+
+
+
 
 
 
