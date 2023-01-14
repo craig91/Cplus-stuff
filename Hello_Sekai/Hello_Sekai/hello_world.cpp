@@ -146,7 +146,16 @@ int main() {
 
 	cout << "The length of the array is: " << getArrayLength;
 
-	
+	// Multidimensional Arrays
+	// A multidimensional array is an array of arrays.
+	// Step 1. define the variable type Step 2. specify the name of the array followed by square brackets which specify how many elements the main array has, followed by another set of square brackets whcih indicates how many elements the sub-arrays have.
+
+	// string letters[2][4];
+	string letters[2][4] = {
+		{"A", "B", "C", "D"},
+		{"E", "F", "G", "H"}
+	}
+
 	
 
 
