@@ -290,19 +290,56 @@ int main() {
 	string food = "Pizza";
 	string& meal = food;
 
-	cout << food << endl;
-	cout << meal << endl;
+	// cout << food << endl;
+	// cout << meal << endl;
 
 	// Memory address
-	// The & operator was used to create a reference variable. It can also be used to get the memory addres of a variable; which is the location of where the variable is stored on the computer. When a var is created in C++, a memory address is assigned to the variable. And when I assign a value to the variable, it is stored in the memory address. To access it, I have to use the & operator, the result will represent where the variable is stored in memory.
+	// The & operator was used to create a reference variable. It can also be used to get the memory address of a variable; which is the location of where the variable is stored on the computer. When a var is created in C++, a memory address is assigned to the variable. And when I assign a value to the variable, it is stored in the memory address. To access it, I have to use the & operator, the result will represent where the variable is stored in memory.
 
-	cout << &food << endl;; // Outputs 000000A8C9F9F4E8 on my computer. This memory address will change everytime my program is run.
+	// cout << &food << endl;; // Outputs 000000A8C9F9F4E8 on my computer. This memory address will change everytime my program is run.
 	
 	const string desert = "cake";
-	cout << &desert << endl; // Outputs 0000000D9CFDF768 on my computer. This memory address changes as well for some reason. I thought it would stay the same since its a constant. But it seems like only the value is immutable, but not the memory address.
+	// cout << &desert << endl; // Outputs 0000000D9CFDF768 on my computer. This memory address changes as well for some reason. I thought it would stay the same since its a constant. But it seems like only the value is immutable, but not the memory address.
+
+	// References and Pointers are important in C++, because they give you the ability to manipulate the data in the computers memory - which can reduce the code and improve the performance.
+
+	// Pointers
+
+	string snack = "Chips"; // snack variable type: string
+	string* snackPtr = &snack; // A pointer variable, with the name snackPtr, that stores the memory address of snack
+
+	// cout << snack << endl; // Output the value of snack
+
+	// cout << &snack << endl; // Output the memory address of snack
+
+	// cout << snackPtr << endl; // Output the memory address of snack with the pointer 000000FA5CAFF4A8
 
 
+// The type of the pointer has to match the type of the variable its referencing to.
 
+	// Get memory address and value
+	// You can use the pointer to get the value of the variable, by using the * operator (the dereference operator).
+
+	cout << "This is the value variable using the pointer: " <<  *snackPtr << endl;
+
+	// Pay attention to the use of * It can be used to do 2 different things
+	// When used in declaration (string* ptr), it creates a pointer variable
+	// When not used in declaration, it acts as a dereference operator.
+
+
+	// Modify the pointer value.
+	// You can change the pointer's value, but it will also change the value of the original variable
+
+	string computer = "Lenovo";
+	string* ComputerPtr = &computer;
+
+	cout << "Original Value: " << computer << endl;
+	cout << "Memory Address: " << &computer << endl;
+	cout << "Pointer: " << *ComputerPtr << endl;
+
+	*ComputerPtr = "Acer";
+	cout << "New value changed in memory: " << *ComputerPtr << endl;
+	cout << "New Value: " << computer << endl;
 
 
 
