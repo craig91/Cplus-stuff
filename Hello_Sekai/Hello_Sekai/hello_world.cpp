@@ -176,7 +176,7 @@ int main() {
 		{"E", "F", "G", "H"}
 	};
 
-	cout << letters3[0][0] << endl;
+	/*cout << letters3[0][0] << endl;
 	cout << letters3[0][1] << endl;
 	cout << letters3[0][2] << endl;
 	cout << letters3[0][3] << endl;
@@ -184,9 +184,33 @@ int main() {
 	cout << letters3[1][0] << endl;
 	cout << letters3[1][1] << endl;
 	cout << letters3[1][2] << endl;
-	cout << letters3[1][3] << endl;
+	cout << letters3[1][3] << endl; */
 
+	// looping through a multidimensional array (2 dimensional)
+/*	for (int i = 0; i < 2; i++) {
+		for (int j = 0; j < 4; j++) {
+			cout << letters3[i][j] << endl;
+		}
+	};*/
 
+	string threeDimension[2][2][2] = {
+		{
+			{"A", "B"},
+			{"C", "D"}
+		},
+		{
+			{"E", "F"},
+			{"G", "H"}
+		}
+	};
+
+	for (int i = 0; i < 2; i++) {
+		for (int j = 0; j < 2; j++) {
+			for (int k = 0; k < 2; k++) {
+				cout << threeDimension[i][j][k] << endl;
+			}
+		}
+	};
 
 
 
