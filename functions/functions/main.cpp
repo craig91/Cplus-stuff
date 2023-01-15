@@ -34,6 +34,41 @@ void arrayFunc(int myNumbers[5]) {
 	}
 }
 
+// function overloading
+// with this technique, multiple functions can have the same name with different parameters:
+// for example, below is a quite tedious way of defining a function that does the same thing.
+int plusFuncInt(int x, int y) {
+	return x + y;
+}
+
+int plusFuncDouble(double x, double y) {
+	return x + y;
+}
+
+// In the above instance, it would be better to overload a function. plusFunc is overload to work for both int and double.
+int plusFunc(int x, int y) {
+	return x + y;
+}
+
+int plusFunc(double x, double y) {
+	return x + y;
+}
+
+// Recursion
+
+// This is the technique of making a function call itself. This technique provides a way to break complicated problems down into simple problems which are easier to solve.
+
+int sum(int k) {
+	if (k > 0) {
+		return k + sum(k - 1);
+	}
+	else {
+		return 0;
+	}
+}
+
+
+
 
 int main() {
 
@@ -79,7 +114,22 @@ int main() {
 
 	// Pass Arrays as function parameters
 	int myNumbers[5] = { 10,20,30,40,50 };
-	arrayFunc(myNumbers);
+	// arrayFunc(myNumbers);
+
+
+	// int myNum1 = plusFuncInt(8, 5);
+	cout << "With overload" << endl;
+	int myNum1 = plusFunc(8, 5);
+	// double myNum2 = plusFuncDouble(4.3, 6.26);
+	double myNum2 = plusFunc(4.3, 6.26);
+	cout << "Int: " << myNum1 << endl;
+	cout << "Double: " << myNum2 << endl;
+	// multiple functions can have the same name as long as the number and/or type of parameters are different.
+
+	int result = sum(10);
+	cout << result << endl;
+
+
 
 }
 
