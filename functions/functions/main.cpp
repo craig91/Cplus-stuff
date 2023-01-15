@@ -28,6 +28,12 @@ int sumParam(int x, int y) {
 	return x + y;
 }
 
+void arrayFunc(int myNumbers[5]) {
+	for (int i = 0; i < 5; i++) {
+		cout << myNumbers[i] << endl;
+	}
+}
+
 
 int main() {
 
@@ -69,6 +75,12 @@ int main() {
 	// You can store the result of the function in a variable as well.
 	int z = sumParam(132, 45);
 	cout << z << endl;
+
+
+	// Pass Arrays as function parameters
+	int myNumbers[5] = { 10,20,30,40,50 };
+	arrayFunc(myNumbers);
+
 }
 
 void exFunction() {
