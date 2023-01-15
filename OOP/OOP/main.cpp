@@ -98,8 +98,4 @@ int main() {
 	myConstruct myObj3; // create object if myConstruct (this will call the constructor)
 	// The constructor has the same name of the class, it is always public, and it does not have any return value.
 
-
-
-
-
 }
