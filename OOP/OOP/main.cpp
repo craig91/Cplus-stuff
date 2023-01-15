@@ -12,7 +12,18 @@ public:
 	string brand;
 	string model;
 	int year;
+//	int speed(int maxSpeed);
+	Car(string x, string y, int z) { // constructor with parameters
+		brand = x;
+		model = y;
+		year = z;
+	}
 };
+
+// You can also add parameters to methods of a class.
+/* int Car::speed(int maxSpeed) {
+	return maxSpeed;
+} */
 
 // Methods are functions that belongs to a class
 // There are 2 ways to define functions that belongs to a class: 1. Inside class definition 2. Outside class definition
@@ -31,6 +42,16 @@ void MyClass2::outsideMethod() {
 	cout << "I am the outside Method!" << endl;
 }
 
+// Constructors
+// A constructor in C++ is a special method that is automatically called when and object of a class is created.
+class myConstruct { // The class
+public:		// Access Specifier
+	myConstruct() { // constructor
+		cout << "I am a constructor";
+	}
+};
+
+
 int main() {
 	MyClass myObj; // create and object of myClass
 
@@ -45,7 +66,8 @@ int main() {
 	cout << "************************************" << endl;
 
 	// create object of car
-	Car carObj1;
+
+	/* Car carObj1;
 	carObj1.brand = "BMW";
 	carObj1.model = "X5";
 	carObj1.year = 1995;
@@ -53,10 +75,18 @@ int main() {
 	Car carObj2;
 	carObj2.brand = "Ford";
 	carObj2.model = "Mustang";
-	carObj2.year = 1969;
+	carObj2.year = 1969; */
 
-	cout << carObj1.brand << " " << carObj1.model << " " << carObj1.year << endl;
-	cout << carObj2.brand << " " << carObj2.model << " " << carObj2.year << endl;
+	Car carObj3("Mitsubishi", "Eclipse", 1996);
+	Car carObj4("Toyota", "Supra", 1994);
+
+
+	cout << carObj3.brand << " " << carObj3.model << " " << carObj3.year <<  endl;
+	cout << carObj4.brand << " " << carObj4.model << " " << carObj4.year << endl;
+	// cout << carObj2.brand << " " << carObj2.model << " " << carObj2.year << " " << carObj2.speed(150) << endl;
+
+
+
 
 	cout << "************************************" << endl;
 
@@ -64,7 +94,12 @@ int main() {
 	myObj2.myMethod(); // call the method
 	myObj2.outsideMethod();
 
-	cout << "************************************" << endl;
+	cout << "************ Constructor ************************" << endl;
+	myConstruct myObj3; // create object if myConstruct (this will call the constructor)
+	// The constructor has the same name of the class, it is always public, and it does not have any return value.
+
+
+
 
 
 }
