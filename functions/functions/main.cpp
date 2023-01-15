@@ -24,6 +24,10 @@ int returnValue(int x) {
 	return 5 + x;
 }
 
+int sumParam(int x, int y) {
+	return x + y;
+}
+
 
 int main() {
 
@@ -43,22 +47,28 @@ int main() {
 	// If a user defined function is declared after the main() function , an error will occur, what you can do is make the declartion above the main() function and define the function under it for code clarity as demonstrated with my exFunction().
 
 	// One parameter
-	nameFunction("Craig");
-	nameFunction("Stephane");
+	// nameFunction("Craig");
+	// nameFunction("Stephane");
 
 	// Default Parameters
-	countryFunction();
-	countryFunction("USA");
-	countryFunction("Zimbabwe");
+	// countryFunction();
+	// countryFunction("USA");
+	// countryFunction("Zimbabwe");
 
 	// Multiple Parameters
-	multiParam("Craig", 31);
-	multiParam("Minami", 35);
+	// multiParam("Craig", 31);
+	// multiParam("Minami", 35);
 
 	// Functions with return values.
-	cout << returnValue(10);
-	cout << returnValue(1234);
+	// cout << returnValue(10) << endl;
+	// cout << returnValue(1234) << endl;
 
+	// Function that returns with 2 params
+	cout << sumParam(17, 78) << endl;
+	cout << sumParam(123, 2074986) << endl;
+	// You can store the result of the function in a variable as well.
+	int z = sumParam(132, 45);
+	cout << z << endl;
 }
 
 void exFunction() {
