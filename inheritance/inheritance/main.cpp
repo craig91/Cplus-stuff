@@ -7,6 +7,7 @@ using namespace std;
 
 // To inherit from a class, use the : symbol
 
+// Why and when? --> it is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.
 
 // base class
 class Vehicle {
