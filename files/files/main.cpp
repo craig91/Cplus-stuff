@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <string>
 
 using namespace std;
 
@@ -10,7 +11,16 @@ using namespace std;
 // fstream --> A combination of ofstream and ifstream: creates, reads, and writes to files.
 
 int main() {
-	ofstream MyFile("filename.text");
+
+	string myText; // create a text string, which is used to output the text file
+	ifstream MyReadFile("filename.text"); // read from the text file;
+	while (getline(MyReadFile, myText)) { // use a while loop together with the getline() to read the file line by line
+		cout << myText << endl; // Output text from the file
+	}
+	
+	MyReadFile.close();
+
+	/* ofstream MyFile("filename.text");
 	MyFile << "Files can be tricky, but it is fun enough!" << endl;
-	MyFile.close();
+	MyFile.close();*/
 }
