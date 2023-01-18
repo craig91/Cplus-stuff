@@ -98,4 +98,35 @@ int main() {
 	myConstruct myObj3; // create object if myConstruct (this will call the constructor)
 	// The constructor has the same name of the class, it is always public, and it does not have any return value.
 
+
+
+	// Access modifiers
+	// The public keyword is an access modifier. Access specifiers define how the members (attributes and methods) of a class can be accessed. Members that are public can be accessed and modified from outside the code.
+	// In C++, there are threee access modifiers: 1. public --> members are accessible outside the class 2.private --> members cannot be accessed (or viewed) from outside the class. 3.protected --> members cannot be accessed from outside the classs, however, they can be accessed by an inherited class.
+
+	class Pclass {
+	public:
+		int x;
+	private:
+		int y;
+	};
+
+	Pclass pObj;
+	pObj.x = 25;
+	// pObj.y = 50; // Cannot access because it is private.
+
+
+	// by default, all members of a class are private if you don't specify an access modifier.
+	class testClass {
+		int x;
+		int y;
+	};
+
+	testClass test;
+	// test.x = 323; --> Will throw and error, this is private.
+
+
+
+
+
 }
