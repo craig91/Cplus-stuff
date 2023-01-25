@@ -289,7 +289,7 @@ int main() {
 	string food = "Pizza";
 	string& meal = food;
 
-	/cout << food << endl;
+	cout << food << endl;
 	cout << meal << endl;
 
 	// Memory address

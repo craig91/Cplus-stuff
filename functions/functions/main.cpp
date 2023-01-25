@@ -67,7 +67,9 @@ int sum(int k) {
 	}
 }
 
-
+int Multiply(int a, int b) {
+	return a * b;
+}
 
 
 int main() {
@@ -129,7 +131,9 @@ int main() {
 	int result = sum(10);
 	cout << result << endl;
 
-
+	int result2 = Multiply(5, 10);
+	cout << result2 << endl;
+	
 
 }
 
